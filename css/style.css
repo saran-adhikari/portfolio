@@ -1070,13 +1070,14 @@ a:hover {
 ======================================*/
 
 footer {
+  background-color: #000;
   text-align: center;
   color: #fff;
-  padding-bottom: 4rem;
+  padding: 1rem;
 }
 
 footer .copyright {
-  margin-bottom: .3rem;
+  margin-bottom: .1rem;
 }
 
 footer .credits {
