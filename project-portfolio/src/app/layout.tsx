@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/app-components/theme-provider"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio - Saran Adhikari",
+  title: "Saran Adhikari - Personal Portfolio",
   description: "Professional portfolio showcasing my work and experience",
 }
 
