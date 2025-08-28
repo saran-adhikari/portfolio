@@ -6,21 +6,22 @@ import { Progress } from "@/app-components/ui/progress"
 
 export function SkillsSection() {
   const technicalSkills = [
-    { name: "JavaScript/TypeScript", level: 95, category: "Frontend" },
-    { name: "React/Next.js", level: 90, category: "Frontend" },
-    { name: "Node.js", level: 85, category: "Backend" },
-    { name: "Python", level: 80, category: "Backend" },
-    { name: "PostgreSQL/MongoDB", level: 85, category: "Database" },
-    { name: "AWS/Vercel", level: 75, category: "DevOps" },
-    { name: "Docker", level: 70, category: "DevOps" },
-    { name: "GraphQL", level: 80, category: "API" },
+    { name: "JavaScript/TypeScript", level: 85, category: "Frontend" },
+    { name: "React/Next.js", level: 80, category: "Frontend" },
+    { name: "FastAPI", level: 70, category: "Backend" },
+    { name: "Python", level: 75, category: "Backend" },
+    { name: "MongoDB", level: 70, category: "Database" },
+    { name: "Google Firebase", level: 80, category: "Database" },
+    { name: "AWS", level: 60, category: "DevOps" },
+    { name: "Google Colab/Jupyter", level: 80, category: "Notebooks" },
+    
   ]
 
   const designSkills = [
     { name: "UI/UX Design", level: 85 },
-    { name: "Figma/Adobe XD", level: 80 },
-    { name: "Responsive Design", level: 95 },
-    { name: "Design Systems", level: 85 },
+    { name: "Figma", level: 80 },
+    { name: "Responsive Design", level: 90 }, 
+    { name: "User Research", level: 70 },
   ]
 
   const softSkills = [
@@ -34,7 +35,7 @@ export function SkillsSection() {
     "Technical Writing",
   ]
 
-  const tools = ["VS Code", "Git", "Postman", "Jira", "Slack", "Linear", "Notion", "Chrome DevTools", "Webpack", "Vite"]
+  const tools = ["VS Code", "Git/GitHub", "Jira", "Slack", "Discord", "Notion", "Chrome DevTools","Swagger UI", "Vite"]
 
   const categories = ["All", "Frontend", "Backend", "Database", "DevOps", "API"]
 
@@ -66,7 +67,7 @@ export function SkillsSection() {
                       <Badge variant="outline" className="text-xs">
                         {skill.category}
                       </Badge>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                      {/* <span className="text-sm text-muted-foreground">{skill.level}%</span> */}
                     </div>
                   </div>
                   <Progress value={skill.level} className="h-2" />
@@ -88,7 +89,7 @@ export function SkillsSection() {
                 <div key={index} className="space-y-2">
                   <div className="flex justify-between items-center">
                     <span className="font-medium text-foreground">{skill.name}</span>
-                    <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                    {/* <span className="text-sm text-muted-foreground">{skill.level}%</span> */}
                   </div>
                   <Progress value={skill.level} className="h-2" />
                 </div>
@@ -129,7 +130,7 @@ export function SkillsSection() {
             <CardContent>
               <div className="flex flex-wrap gap-2">
                 {tools.map((tool, index) => (
-                  <Badge key={index} variant="secondary" className="text-sm">
+                  <Badge key={index} variant="outline" className="text-primary text-sm px-2 py-1 hover:scale-105 transition-transform bg-primary/10 hover:bg-primary/20 cursor-pointer">
                     {tool}
                   </Badge>
                 ))}
