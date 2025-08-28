@@ -34,8 +34,8 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl font-bold text-foreground hover:text-accent transition-colors">
-              Portfolio
+            <a href="#" className="text-xl font-bold text-foreground hover:text-muted/90 transition-colors">
+              Saran Adhikari
             </a>
           </div>
 
@@ -56,7 +56,16 @@ export function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="default" className="bg-accent hover:bg-accent/90">
+            <Button variant="default" className="text-primary bg-accent hover:bg-accent/90 cursor-pointer"
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = "/Files/SaranAdhikari_CV.pdf"; // Make sure the file exists in /public/files
+              link.setAttribute("download", "SaranAdhikari_CV.pdf");
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
+            >
               Download CV
             </Button>
           </div>
@@ -84,7 +93,16 @@ export function Navigation() {
                 </a>
               ))}
               <div className="pt-2">
-                <Button variant="default" className="w-full bg-accent hover:bg-accent/90">
+                <Button variant="default" className="w-full bg-accent hover:bg-accent/90 cursor-pointer"
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = "/Files/SaranAdhikari_CV.pdf"; // Make sure the file exists in /public/files
+                    link.setAttribute("download", "SaranAdhikari_CV.pdf");
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                >
                   Download CV
                 </Button>
               </div>
