@@ -46,6 +46,10 @@ export function Footer() {
   ]
 
   return (
+
+    <>
+    
+    
     <footer className="bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
@@ -115,7 +119,7 @@ export function Footer() {
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <span>© {currentYear} Saran Adhikari. Made with</span>
               <Heart className="h-4 w-4 text-black-500 fill-current" />
-              <span>and lots of motivation.</span>
+              <span>and listening to lofi music.</span>
             </div>
 
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
@@ -131,9 +135,31 @@ export function Footer() {
             </div>
           </div>
         </div>
-
-        
+             
       </div>
+
+       
     </footer>
+    {/* Back to top button */}
+        <div className="fixed bottom-6 right-6 z-50">
+          <a
+            href="#top"
+            className="bg-accent text-accent-foreground p-3 rounded-full shadow-lg hover:bg-accent/90 transition-colors duration-300 flex items-center justify-center"
+            aria-label="Back to top"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
+            </svg>
+          </a>
+        </div>
+
+    </> 
   )
 }

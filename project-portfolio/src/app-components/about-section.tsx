@@ -30,10 +30,10 @@ export function AboutSection() {
 
   const interests = [
     "Open Source",
-    "UI/UX Design",
-    "Web Performance",
-    "Accessibility",
-    "Photography",
+    "LLMs",
+    "Web Development",
+    "AI & Machine Learning",
+    "Music",
     "Travel",
     "Coffee",
     "Minimalism",
