@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/app-components/ui/button"
-import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail, Heart, Instagram } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -25,22 +25,22 @@ export function Footer() {
   const socialLinks = [
     {
       icon: <Github className="h-5 w-5" />,
-      href: "https://github.com/johndoe",
+      href: "https://github.com/saran-adhikari",
       label: "GitHub",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
-      href: "https://linkedin.com/in/johndoe",
+      href: "https://linkedin.com/in/saran-adhikari",
       label: "LinkedIn",
     },
     {
-      icon: <Twitter className="h-5 w-5" />,
-      href: "https://twitter.com/johndoe",
-      label: "Twitter",
+      icon: <Instagram className="h-5 w-5" />,
+      href: "https://www.instagram.com/saran_adhikari/",
+      label: "Instagram",
     },
     {
       icon: <Mail className="h-5 w-5" />,
-      href: "mailto:john.doe@example.com",
+      href: "mailto:saranadhikari02@gmail.com",
       label: "Email",
     },
   ]
