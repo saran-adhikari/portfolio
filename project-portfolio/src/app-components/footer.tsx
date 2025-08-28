@@ -115,7 +115,7 @@ export function Footer() {
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <span>© {currentYear} Saran Adhikari. Made with</span>
               <Heart className="h-4 w-4 text-black-500 fill-current" />
-              <span>and lots of coffee.</span>
+              <span>and lots of motivation.</span>
             </div>
 
             <div className="flex items-center gap-6 text-sm text-muted-foreground">

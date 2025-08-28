@@ -8,7 +8,7 @@ import { Button } from "@/app-components/ui/button"
 import { Input } from "@/app-components/ui/input"
 import { Textarea } from "@/app-components/ui/textarea"
 import { Label } from "@/app-components/ui/label"
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Calendar } from "lucide-react"
+import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Calendar, Instagram } from "lucide-react"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -41,19 +41,19 @@ export function ContactSection() {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com",
+      value: "saranadhikari02@gmail.com",
+      href: "mailto:saranadhikari02@gmail.com",
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+977 9768400823",
       href: "tel:+15551234567",
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Lalitpur, BA 44600, Nepal",
       href: "#",
     },
   ]
@@ -62,20 +62,20 @@ export function ContactSection() {
     {
       icon: <Github className="h-5 w-5" />,
       label: "GitHub",
-      href: "https://github.com/johndoe",
-      username: "@johndoe",
+      href: "https://github.com/saran-adhikari",
+      username: "@saran-adhikari",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/johndoe",
-      username: "John Doe",
+      href: "https://www.linkedin.com/in/saran-adhikari/",
+      username: "Saran Adhikari",
     },
     {
-      icon: <Twitter className="h-5 w-5" />,
-      label: "Twitter",
-      href: "https://twitter.com/johndoe",
-      username: "@johndoe",
+      icon: <Instagram className="h-5 w-5" />,
+      label: "Instagram",
+      href: "https://www.instagram.com/saran_adhikari/",
+      username: "@saran_adhikari",
     },
   ]
 
@@ -222,7 +222,7 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            <Card className="border-border bg-accent/5">
+            {/* <Card className="border-border bg-accent/5">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <Calendar className="h-5 w-5 text-accent" />
@@ -235,7 +235,7 @@ export function ContactSection() {
                   Book a Meeting
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>
