@@ -55,7 +55,7 @@ export function Footer() {
             <div className="space-y-2">
               <h3 className="text-2xl font-bold text-foreground">Saran Adhikari</h3>
               <p className="text-muted-foreground max-w-md leading-relaxed">
-                Full-Stack Developer & UI/UX Designer passionate about creating beautiful, functional web experiences
+                Full-Stack Developer & AI/ML Enthusiast passionate about creating beautiful, functional web experiences
                 that solve real problems.
               </p>
             </div>

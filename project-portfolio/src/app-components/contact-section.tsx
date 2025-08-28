@@ -83,9 +83,9 @@ export function ContactSection() {
     <section id="contact" className="py-20 bg-muted/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">Let's Work Together</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">Let&apos;s Work Together</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Have a project in mind or want to discuss opportunities? I'd love to hear from you. Let's create something
+            Have a project in mind or want to discuss opportunities? I&apos;d love to hear from you. Let&apos;s create something
             amazing together.
           </p>
         </div>
@@ -171,8 +171,8 @@ export function ContactSection() {
               </CardHeader>
               <CardContent className="space-y-6">
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm always interested in hearing about new opportunities, whether that's a full-time role, freelance
-                  project, or just a chat about technology and design.
+                  I&apos;m always interested in hearing about new opportunities, whether that&apos;s a full-time role, freelance
+                  project, or just a chat about technology.
                 </p>
 
                 <div className="space-y-4">

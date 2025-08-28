@@ -273,7 +273,7 @@ export function PortfolioSection() {
         <div className="text-center mt-16 p-8 bg-muted/20 rounded-lg">
           <h3 className="text-xl font-semibold text-foreground mb-2">Interested in working together?</h3>
           <p className="text-muted-foreground mb-6">
-            I'm always open to discussing new opportunities and exciting projects.
+            I&apos;m always open to discussing new opportunities and exciting projects.
           </p>
           <Button className="bg-accent hover:bg-accent/90">Get In Touch</Button>
         </div>

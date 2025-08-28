@@ -44,9 +44,19 @@ project-portfolio
 ├─ package.json
 ├─ postcss.config.mjs
 ├─ public
+│  ├─ brand-identity-design-mockup.png
+│  ├─ creative-portfolio-website.png
+│  ├─ data-dashboard-charts.png
 │  ├─ file.svg
+│  ├─ Files
+│  │  └─ SaranAdhikari_CV.pdf
 │  ├─ globe.svg
+│  ├─ Images
+│  │  └─ profile.jpg
+│  ├─ mobile-banking-app-screens.png
+│  ├─ modern-ecommerce-dashboard.png
 │  ├─ next.svg
+│  ├─ task-management-app.png
 │  ├─ vercel.svg
 │  └─ window.svg
 ├─ README.md
@@ -56,16 +66,27 @@ project-portfolio
 │  │  ├─ globals.css
 │  │  ├─ layout.tsx
 │  │  └─ page.tsx
-│  └─ components
-│     ├─ about-section.tsx
-│     ├─ contact-section.tsx
-│     ├─ education-section.tsx
-│     ├─ experience-section.tsx
-│     ├─ footer.tsx
-│     ├─ hero-section.tsx
-│     ├─ navigation.tsx
-│     ├─ portfolio-section.tsx
-│     └─ skills-section.tsx
+│  ├─ app-components
+│  │  ├─ about-section.tsx
+│  │  ├─ contact-section.tsx
+│  │  ├─ education-section.tsx
+│  │  ├─ experience-section.tsx
+│  │  ├─ footer.tsx
+│  │  ├─ hero-section.tsx
+│  │  ├─ navigation.tsx
+│  │  ├─ portfolio-section.tsx
+│  │  ├─ skills-section.tsx
+│  │  ├─ theme-provider.tsx
+│  │  └─ ui
+│  │     ├─ badge.tsx
+│  │     ├─ button.tsx
+│  │     ├─ card.tsx
+│  │     ├─ input.tsx
+│  │     ├─ label.tsx
+│  │     ├─ progress.tsx
+│  │     └─ textarea.tsx
+│  └─ lib
+│     └─ utils.ts
 └─ tsconfig.json
 
 ```
