@@ -8,24 +8,25 @@ export function EducationSection() {
   const education = [
     {
       id: 1,
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      location: "Boston, MA",
-      period: "2015 - 2019",
-      gpa: "3.8/4.0",
-      honors: ["Magna Cum Laude", "Dean's List (6 semesters)"],
+      degree: "BSc(Hons) in Computer Science",
+      institution: "Herald College Kathmandu, affiliated to University of Wolverhampton",
+      location: "Kathmandu",
+      period: "2022 - 2025",
+      gpa: "3.7/4.0",
+      honors: ["First Class Honors"],
       relevantCourses: [
-        "Data Structures & Algorithms",
-        "Software Engineering",
-        "Database Systems",
-        "Web Development",
-        "Computer Networks",
-        "Machine Learning",
+        "Machine Learning and AI",
+        "Big Data",
+        "Complex Systems",
+        "Project and Professionalism",
+        "Collaborative Development",
+        "Concepts and Technologies of AI",
+        "Computational Mathematics",
       ],
       projects: [
-        "Senior Capstone: E-commerce Platform with React and Node.js",
-        "Database Design Project: Library Management System",
-        "Machine Learning Project: Sentiment Analysis Tool",
+        "PlayDeals: Game Price Insights Platform with React.js and FastAPI",
+        "Project Manager: Human Resource Management System",
+        "Machine Learning Project: Image Classification and Sentiment Analysis",
       ],
     },
   ]
@@ -33,66 +34,63 @@ export function EducationSection() {
   const certifications = [
     {
       id: 1,
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2023",
+      name: "IELTS Academic",
+      issuer: "British Council",
+      date: "2025",
       credentialId: "AWS-CSA-2023-001",
       status: "Active",
     },
+
     {
       id: 2,
-      name: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2022",
+      name: "C# Intermediate Certification",
+      issuer: "SoloLearn",
+      date: "2024",
       credentialId: "GCP-PD-2022-045",
       status: "Active",
     },
     {
       id: 3,
-      name: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2022",
-      credentialId: "CKA-2022-789",
+      name: "Introduction to C# Certification",
+      issuer: "SoloLearn",
+      date: "2024",
+      credentialId: "GCP-PD-2022-045",
       status: "Active",
     },
     {
       id: 4,
-      name: "React Developer Certification",
-      issuer: "Meta",
-      date: "2021",
-      credentialId: "META-RD-2021-123",
+      name: "Web Development Training Certification",
+      issuer: "Broadway Infosys Pvt. Ltd.",
+      date: "2023",
+      credentialId: "GCP-PD-2022-045",
       status: "Active",
     },
+    
   ]
 
   const achievements = [
     {
       id: 1,
-      title: "Outstanding Student Award",
-      organization: "Computer Science Department",
-      year: "2019",
-      description: "Awarded for academic excellence and contribution to student community",
+      title: "Research Works",
+      organization: "Big Data Module",
+      year: "2025",
+      description: "Authored the paper on 'Use of Big Data in E-Commerce Data Analysis for Customer Churn Prediction'",
     },
+
     {
       id: 2,
-      title: "Hackathon Winner",
-      organization: "TechCrunch Disrupt",
-      year: "2019",
-      description: "First place for developing an AI-powered accessibility tool",
+      title: "Best Project Display",
+      organization: "Collaborative Development Module",
+      year: "2024",
+      description: "Awarded for best project developed as a team using Agile methodologies",
     },
+    
     {
       id: 3,
-      title: "Research Publication",
-      organization: "IEEE Conference",
-      year: "2018",
-      description: "Co-authored paper on 'Optimizing Web Performance through Machine Learning'",
-    },
-    {
-      id: 4,
-      title: "Programming Contest",
-      organization: "ACM ICPC Regional",
-      year: "2018",
-      description: "Top 10 finish in regional programming competition",
+      title: "Voice of Future Stars",
+      organization: "Future Stars High School",
+      year: "2019",
+      description: "Finished 3rd on the Voice of Future Stars singing contest",
     },
   ]
 
@@ -189,7 +187,7 @@ export function EducationSection() {
                       <div className="space-y-1">
                         <h4 className="font-semibold text-foreground">{cert.name}</h4>
                         <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                        <p className="text-xs text-muted-foreground">ID: {cert.credentialId}</p>
+                        {/* <p className="text-xs text-muted-foreground">ID: {cert.credentialId}</p> */}
                       </div>
                       <div className="text-right space-y-1">
                         <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">

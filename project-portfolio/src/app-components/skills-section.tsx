@@ -35,7 +35,7 @@ export function SkillsSection() {
     "Technical Writing",
   ]
 
-  const tools = ["VS Code", "Git/GitHub", "Jira", "Slack", "Discord", "Notion", "Chrome DevTools","Swagger UI", "Vite"]
+  const tools = ["VS Code", "Git/GitHub","Slack", "Jira", "Slack", "Discord", "Notion", "Chrome DevTools","Swagger UI", "Vite","Trello"]
 
   const categories = ["All", "Frontend", "Backend", "Database", "DevOps", "API"]
 
