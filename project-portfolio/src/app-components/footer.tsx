@@ -114,27 +114,30 @@ export function Footer() {
         </div>
 
         {/* Bottom Footer */}
-        <div className="py-6 border-t border-border">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <span>© {currentYear} Saran Adhikari. Made with</span>
-              <Heart className="h-4 w-4 text-black-500 fill-current" />
-              <span>and listening to lofi music.</span>
-            </div>
+          <div className="py-6 border-t border-border">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-center md:text-left">
+              {/* Left side */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm text-muted-foreground">
+                <span>© {currentYear} Saran Adhikari. Made with</span>
+                <Heart className="h-4 w-4 text-black-500 fill-current" />
+                <span>and listening to lofi music.</span>
+              </div>
 
-            <div className="flex items-center gap-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-foreground transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-foreground transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-foreground transition-colors">
-                Sitemap
-              </a>
+              {/* Right side */}
+              <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm text-muted-foreground">
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Privacy Policy
+                </a>
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Terms of Service
+                </a>
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Sitemap
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+
              
       </div>
 
