@@ -45,7 +45,7 @@ export function HeroSection() {
               Full-Stack Developer & AI Enthusiast
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            First Class Honors Graduate | Full-Stack Developer (ReactJS, NextJS, FastAPI, MongoDB) | Research-Oriented | Building Scalable & Intelligent Systems
+            First Class Honors Graduate | Full-Stack Developer | Next.js, FastAPI, MongoDB | Research-Oriented | Building Scalable & Intelligent Systems
             </p>
           </div>
 
@@ -70,10 +70,10 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground cursor-pointer" onClick={() => window.open("/#portfolio", "_self")}>
               View My Work
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="text-foreground border-border hover:bg-accent/10 cursor-pointer" onClick={() => window.open("/#contact", "_self")}>
               Get In Touch
             </Button>
           </div>

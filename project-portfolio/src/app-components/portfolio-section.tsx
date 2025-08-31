@@ -327,7 +327,7 @@ export function PortfolioSection() {
           <p className="text-muted-foreground mb-6">
             I&apos;m always open to discussing new opportunities and exciting projects.
           </p>
-          <Button className="bg-accent hover:bg-accent/90">Get In Touch</Button>
+          <Button className="text-primary bg-accent hover:bg-accent/90 cursor-pointer" onClick={() => window.open("/#contact", "_self")}>Get In Touch</Button>
         </div>
       </div>
     </section>

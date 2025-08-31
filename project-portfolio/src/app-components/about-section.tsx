@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/app-components/ui/card"
 import { Badge } from "@/app-components/ui/badge"
-import { Code, Palette, Rocket, Users } from "lucide-react"
+import { Brain, Code, Cpu, Network, Orbit, Palette, Rocket, Users } from "lucide-react"
 
 export function AboutSection() {
   const values = [
@@ -12,9 +12,9 @@ export function AboutSection() {
       description: "Writing maintainable, scalable code that stands the test of time",
     },
     {
-      icon: <Palette className="h-6 w-6" />,
-      title: "User-Centered Design",
-      description: "Creating intuitive experiences that users love and understand",
+      icon: <Brain className="h-6 w-6" />,
+      title: "AI & ML Learning",
+      description: "Harnessing data and algorithms to build intelligent systems",
     },
     {
       icon: <Rocket className="h-6 w-6" />,
@@ -56,10 +56,10 @@ export function AboutSection() {
               <h3 className="text-2xl font-semibold text-foreground">My Story</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Hello! I&apos;m Saran Adhikari, a First Class Honors graduate in BSc (Hons) Computer Science from Herald College Kathmandu (affiliated with the University of Wolverhampton, UK). With a strong academic foundation and a deep passion for machine learning, optimization, and large-scale intelligent systems, I am currently exploring fully funded GA/TA opportunities for Master&apos;s and Ph.D. programs in the U.S..
+                  Hello! I&apos;m Saran Adhikari, a First Class Honors graduate in BSc (Hons) Computer Science from Herald College Kathmandu (affiliated with the University of Wolverhampton, UK). With a strong academic foundation and a deep passion for machine learning, optimization, and large-scale intelligent systems, I am currently exploring opportunities for Master&apos;s and Ph.D. programs.
                 </p>
                 <p>
-                  My core technical skill set includes Python, JavaScript, React.js, and Mongodb, enabling me to develop scalable, responsive, and user-centered web applications. Beyond web technologies, I am increasingly focused on applied machine learning, deep learning, large language models (LLMs), and algorithmic problem-solving, I&apos;ve explored both in coursework and through my independent research interests.
+                  My core technical skill set includes Python, JavaScript, Next.js, and Mongodb, enabling me to develop scalable, responsive, and user-centered web applications. Beyond web technologies, I am increasingly focused on applied machine learning, deep learning, large language models (LLMs), and algorithmic problem-solving, I&apos;ve explored both in coursework and through my independent research interests.
 
                 </p>
                 <p>

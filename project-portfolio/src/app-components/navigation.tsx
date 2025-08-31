@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/app-components/ui/button"
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -34,9 +35,9 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl font-bold text-foreground hover:text-muted/90 transition-colors">
+            <Link href="/" className="text-xl font-bold text-foreground hover:text-muted/90 transition-colors">
               Saran Adhikari
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
