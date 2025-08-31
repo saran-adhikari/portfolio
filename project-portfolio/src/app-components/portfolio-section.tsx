@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Card, CardContent } from "@/app-components/ui/card"
 import { Badge } from "@/app-components/ui/badge"
 import { Button } from "@/app-components/ui/button"
@@ -12,98 +13,116 @@ export function PortfolioSection() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with modern UI, payment integration, and admin dashboard.",
+      title: "PlayDeals: Games Price Insights",
+      description: "A full-stack game price solution with modern UI, ML embedded forecasting, admin dashboard and event organizing system.",
       category: "Web App",
-      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-      image: "/modern-ecommerce-dashboard.png",
+      technologies: ["React.js", "FastAPI", "MongoDB"],
+      image: "/Images/playdeals.jpg",
       role: "Full-Stack Developer",
       duration: "3 months",
       links: {
-        github: "#",
-        live: "#",
-        case: "#",
+        github: "https://github.com/saran-adhikari/playdeals",
+        
       },
       featured: true,
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates and team collaboration features.",
+      title: "Divine Guest House",
+      description: "Web application with booking features and hospitality information.",
       category: "Web App",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-      image: "/task-management-app.png",
+      technologies: ["React.js", "Node.js", "Email.js", "MongoDB"],
+      image: "/Images/dgh.png",
       role: "Lead Developer",
-      duration: "4 months",
+      duration: "3 months",
       links: {
-        github: "#",
-        live: "#",
-      },
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "Brand Identity Design",
-      description: "Complete brand identity design for a tech startup including logo, colors, and style guide.",
-      category: "Design",
-      technologies: ["Figma", "Adobe Illustrator", "Photoshop"],
-      image: "/brand-identity-design-mockup.png",
-      role: "UI/UX Designer",
-      duration: "2 months",
-      links: {
-        behance: "#",
-        case: "#",
+        // github: "#",
+        live: "https://dgh.com.np/",
       },
       featured: false,
     },
     {
-      id: 4,
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric authentication and intuitive user experience.",
-      category: "Mobile",
-      technologies: ["React Native", "TypeScript", "Firebase"],
-      image: "/mobile-banking-app-screens.png",
-      role: "Mobile Developer",
-      duration: "5 months",
+      id: 3,
+      title: "AI-ML Projects",
+      description: "AI-ML project on image classification and sentiment analysis",
+      category: "AI/ML",
+      technologies: ["TensorFlow", "Keras", "Gradio", "Python", "Google Colab"],
+      image: "/Images/ai-ml.png",
+      role: "AI Developer",
+      duration: "12 weeks",
       links: {
-        github: "#",
-        case: "#",
+        github: "https://github.com/saran-adhikari/courseworks-aiml",
+        
+      },
+      featured: true,
+    },
+    {
+      id: 4,
+      title: "Nepal Travel Co",
+      description: "Secure web application with treks information, booking features and intuitive user experience.",
+      category: "Web App",
+      technologies: ["Next.js", "TypeScript", "Node.js"],
+      image: "/Images/ntc.png",
+      role: "Full-Stack Developer",
+      duration: "Currently Ongoing",
+      links: {
+        live: "https://nepaltravelco.netlify.app/",
+        // github: "#",
+        // case: "#",
+        
       },
       featured: true,
     },
     {
       id: 5,
-      title: "Data Visualization Dashboard",
-      description: "Interactive dashboard for business analytics with real-time data visualization and reporting.",
+      title: "Human Resource Management System",
+      description: "Interactive dashboard for Human Resource analytics with real-time data visualization and reporting.",
       category: "Web App",
-      technologies: ["D3.js", "React", "Python", "FastAPI"],
-      image: "/data-dashboard-charts.png",
-      role: "Frontend Developer",
-      duration: "3 months",
+      technologies: ["React.js", "Node.js", "TypeScript", "MongoDB", "Express.js"],
+      image: "/Images/hrms.png",
+      role: "Project Manager",
+      duration: "12 Weeks",
       links: {
-        github: "#",
-        live: "#",
+        // github: "#",
+        // live: "#",
       },
       featured: false,
     },
     {
       id: 6,
-      title: "Portfolio Website Design",
-      description: "Modern portfolio website design for a creative agency with smooth animations and interactions.",
-      category: "Design",
-      technologies: ["Figma", "Framer", "After Effects"],
-      image: "/creative-portfolio-website.png",
-      role: "UI/UX Designer",
+      title: "ModernFoot: E-Commerce Platform",
+      description: "Modern e-commerce website design for displaying items with seamless user interactions.",
+      category: "Web App",
+      technologies: ["React.js", "Framer", "After Effects"],
+      image: "/Images/mf.png",
+      role: "Frontend Developer",
       duration: "1 month",
       links: {
+        github: "https://github.com/saran-adhikari/ModernFoot",
+        live: "https://modernfoot.netlify.app/",
         figma: "#",
         behance: "#",
       },
       featured: false,
     },
+    {
+      id: 7,
+      title: "AI-ML Workshops",
+      description: "Hands on AI-ML workshops",
+      category: "AI/ML",
+      technologies: ["Keras", "TensorFlow", "Python"],
+      image: "/Images/ai-ml-workshops.png",
+      role: "AI Developer",
+      duration: "12 weeks",
+      links: {
+        github: "https://github.com/saran-adhikari/AI-ML",
+        
+      },
+      featured: false,
+    },
   ]
 
-  const categories = ["All", "Web App", "Mobile", "Design"]
+  const categories = ["All", "Web App", "Mobile", "AI/ML"]
 
   const filteredProjects =
     activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)
@@ -130,20 +149,34 @@ export function PortfolioSection() {
                 className="group border-border hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
                 <div className="relative overflow-hidden">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <div className="relative w-full h-40 overflow-hidden">
+                    <Image
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
                     {project.links.live && (
-                      <Button size="sm" variant="secondary" className="bg-white/90 hover:bg-white">
-                        <Eye className="h-4 w-4 mr-2" />
-                        Live Demo
-                      </Button>
-                    )}
+                        <Button
+                          size="sm"
+                          variant="secondary"
+                          className="bg-accent/90 hover:bg-accent cursor-pointer"
+                          onClick={() => window.open(project.links.live, "_blank", "noopener,noreferrer")}
+                        >
+                          <Eye className="h-4 w-4 mr-2" />
+                          Live Demo
+                        </Button>
+                      )}
                     {project.links.github && (
-                      <Button size="sm" variant="secondary" className="bg-white/90 hover:bg-white">
+                      <Button
+                        size="sm"
+                        variant="secondary"
+                        className="bg-accent/90 hover:bg-accent cursor-pointer"
+                        onClick={() => window.open(project.links.github, "_blank", "noopener,noreferrer")}
+                      >
                         <Github className="h-4 w-4 mr-2" />
                         Code
                       </Button>
@@ -176,14 +209,19 @@ export function PortfolioSection() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2 pt-2">
+                  {/* <div className="flex items-center gap-2 pt-2">
                     {project.links.case && (
-                      <Button variant="ghost" size="sm" className="text-accent hover:text-accent/80">
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Case Study
-                      </Button>
-                    )}
-                  </div>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="text-accent hover:text-accent/80"
+                          onClick={() => window.open(project.links.case, "_blank", "noopener,noreferrer")}
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Case Study
+                        </Button>
+                      )}
+                  </div> */}
                 </CardContent>
               </Card>
             ))}
@@ -218,11 +256,15 @@ export function PortfolioSection() {
                 className="group border-border hover:shadow-lg transition-all duration-300 overflow-hidden"
               >
                 <div className="relative overflow-hidden">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <div className="relative w-full h-40 overflow-hidden">
+                      <Image
+                        src={project.image || "/placeholder.svg"}
+                        alt={project.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+
                   <Badge className="absolute top-2 right-2 bg-accent text-accent-foreground text-xs">
                     {project.category}
                   </Badge>
@@ -252,12 +294,22 @@ export function PortfolioSection() {
                     <span className="text-xs text-muted-foreground">{project.role}</span>
                     <div className="flex items-center gap-1">
                       {project.links.github && (
-                        <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="h-8 w-8 p-0 cursor-pointer"
+                          onClick={() => window.open(project.links.github, "_blank", "noopener,noreferrer")}
+                        >
                           <Github className="h-4 w-4" />
                         </Button>
                       )}
                       {project.links.live && (
-                        <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="h-8 w-8 p-0 cursor-pointer"
+                          onClick={() => window.open(project.links.live, "_blank", "noopener,noreferrer")}
+                        >
                           <ExternalLink className="h-4 w-4" />
                         </Button>
                       )}
