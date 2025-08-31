@@ -51,14 +51,14 @@ export function HeroSection() {
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
-            <Button variant="outline" size="icon" className="rounded-full bg-transparent">
+            <Button variant="outline" size="icon" className="rounded-full bg-transparent cursor-pointer">
               <Github className="h-5 w-5" onClick={() => window.open("https://github.com/saran-adhikari", "_blank")}/>
               
             </Button>
-            <Button variant="outline" size="icon" className="rounded-full bg-transparent">
+            <Button variant="outline" size="icon" className="rounded-full bg-transparent cursor-pointer">
               <Linkedin className="h-5 w-5" onClick={() => window.open("https://www.linkedin.com/in/saran-adhikari/", "_blank")}/>
             </Button>
-            <Button variant="outline" size="icon" className="rounded-full bg-transparent">
+            <Button variant="outline" size="icon" className="rounded-full bg-transparent cursor-pointer">
               <Mail className="h-5 w-5"  onClick={() =>
                   window.open(
                     "https://mail.google.com/mail/?view=cm&to=saranadhikari02@gmail.com&su=Contact Through Portfolio Website&body=Hi%20Saran",
