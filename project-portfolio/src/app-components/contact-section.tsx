@@ -9,6 +9,7 @@ import { Input } from "@/app-components/ui/input"
 import { Textarea } from "@/app-components/ui/textarea"
 import { Label } from "@/app-components/ui/label"
 import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Calendar, Instagram } from "lucide-react"
+import emailjs from "@emailjs/browser"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -18,6 +19,12 @@ export function ContactSection() {
     message: "",
   })
 
+  const [popup, setPopup] = useState<{ show: boolean; message: string; success: boolean }>({
+  show: false,
+  message: "",
+  success: true,
+});
+
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -26,16 +33,34 @@ export function ContactSection() {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+  try {
+    await emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
+    );
 
-    console.log("Form submitted:", formData)
-    setIsSubmitting(false)
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    console.log("Email successfully sent!");
+    setPopup({ show: true, message: "Message sent successfully!", success: true });
+
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  } catch (error) {
+    console.error("EmailJS error:", error);
+    setPopup({ show: true, message: "Something went wrong. Please try again.", success: false });
+  } finally {
+    setIsSubmitting(false);
   }
+};
+
 
   const contactInfo = [
     {
@@ -239,6 +264,24 @@ export function ContactSection() {
           </div>
         </div>
       </div>
+      {popup.show && (
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg z-50 max-w-sm w-full text-center">
+              <h3 className={`text-lg font-semibold mb-2 ${popup.success ? "text-green-600" : "text-red-600"}`}>
+                {popup.success ? "Success!" : "Error"}
+              </h3>
+              <p className="mb-4 text-sm text-muted-foreground">{popup.message}</p>
+              <Button
+                onClick={() => setPopup({ ...popup, show: false })}
+                className="bg-accent hover:bg-accent/90 w-full"
+              >
+                OK
+              </Button>
+            </div>
+          </div>
+        )}
+
     </section>
   )
 }
