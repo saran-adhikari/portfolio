@@ -9,23 +9,24 @@ export function ExperienceSection() {
     {
       id: 1,
       title: "Freelance Web Developer",
-      company: "Nepal Travel Co",
+      company: "Nepal Travel Co & The International Centre for Compliance and Development (ICCD)",
       location: "Kathmandu, BA 44600",
       period: "July 2025 - Present",
       type: "Remote",
-      description: "Leading development of scalable web application and monitoring SEO performance.",
+      description: "Leading development of scalable web applications and monitoring SEO performance for Nepal Travel Co and ICCD, a premier institution dedicated to strengthening AML/CFT regimes and compliance frameworks across financial institutions worldwide.",
       responsibilities: [
-        "The project involves building a fully responsive, user-centric web application using Next.js for the frontend and FastAPI for the backend.",
+        "Developing fully responsive, user-centric web applications using Next.js for the frontend and FastAPI for the backend.",
         "Integrating third-party services such as Google Maps for location-based experiences and image galleries to enhance visual appeal.",
         "Ensuring performance optimization, mobile responsiveness, and accessibility across all major browsers and devices.",
         "Collaborating with UI/UX designers and content teams to deliver a seamless and engaging user journey.",
-        "Prioritizing code quality, security best practices, and API efficiency to support scalable deployment and future feature integration",
+        "Prioritizing code quality, security best practices, and API efficiency to support scalable deployment and future feature integration.",
+        "Contributing to ICCD's mission by supporting digital initiatives that enhance education and practical solutions in financial compliance."
       ],
-      technologies: ["React.js", "Node.js", "TypeScript", "Next.js", "Netlify","FastAPI", "Git", "SEO", "Figma", "Trello"],
+      technologies: ["React.js", "Node.js", "TypeScript", "Next.js", "Netlify", "FastAPI", "Git", "SEO", "Figma", "Trello"],
       achievements: [
-        "Fixed seamless user engagement",
-        "Built reusable component library",
-        "Reduced bugs",
+        "Improved seamless user engagement across platforms",
+        "Built a reusable component library for faster development",
+        "Reduced bugs and optimized performance for critical workflows"
       ],
     },
     
