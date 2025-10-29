@@ -64,24 +64,7 @@ export function Footer() {
               </p>
             </div>
 
-            <div className="flex items-center gap-2">
-              <span className="text-sm text-muted-foreground">Let&apos;s connect:</span>
-              <div className="flex gap-2">
-                {socialLinks.map((social) => (
-                  <Button
-                    key={social.label}
-                    variant="ghost"
-                    size="sm"
-                    className="h-9 w-9 p-0 hover:bg-accent hover:text-accent-foreground"
-                    asChild
-                  >
-                    <a href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label}>
-                      {social.icon}
-                    </a>
-                  </Button>
-                ))}
-              </div>
-            </div>
+            
           </div>
 
           {/* Navigation Links */}
@@ -98,18 +81,28 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
+          
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">Resources</h4>
-            <ul className="space-y-2">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <a href={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            
+            <span className="font-semibold text-foreground">Let&apos;s connect</span>
+            <p className="text-muted-foreground mb-2 py-2">
+              Follow on socials and reach out anytime!
+            </p>
+              <div className="flex gap-2">
+                {socialLinks.map((social) => (
+                  <Button
+                    key={social.label}
+                    variant="ghost"
+                    size="sm"
+                    className="h-9 w-9 p-0 hover:bg-accent hover:text-accent-foreground"
+                    asChild
+                  >
+                    <a href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label}>
+                      {social.icon}
+                    </a>
+                  </Button>
+                ))}
+              </div>
           </div>
         </div>
 
@@ -124,7 +117,7 @@ export function Footer() {
               </div>
 
               {/* Right side */}
-              <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm text-muted-foreground">
+              {/* <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm text-muted-foreground">
                 <a href="#" className="hover:text-foreground transition-colors">
                   Privacy Policy
                 </a>
@@ -134,7 +127,7 @@ export function Footer() {
                 <a href="#" className="hover:text-foreground transition-colors">
                   Sitemap
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 
