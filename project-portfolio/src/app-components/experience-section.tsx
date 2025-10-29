@@ -11,7 +11,7 @@ export function ExperienceSection() {
       title: "Freelance Web Developer",
       company: "Nepal Travel Co & The International Centre for Compliance and Development (ICCD)",
       location: "Kathmandu, BA 44600",
-      period: "July 2025 - Present",
+      period: "June 2025 - Present",
       type: "Remote",
       description: "Leading development of scalable web applications and monitoring SEO performance for Nepal Travel Co and ICCD, a premier institution dedicated to strengthening AML/CFT regimes and compliance frameworks across financial institutions worldwide.",
       responsibilities: [
