@@ -21,6 +21,7 @@ export function PortfolioSection() {
       role: "Full-Stack Developer",
       duration: "3 months",
       links: {
+        live: "https://playdeals.vercel.app/",
         github: "https://github.com/saran-adhikari/playdeals",
         
       },
