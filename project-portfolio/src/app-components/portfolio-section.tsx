@@ -55,7 +55,7 @@ export function PortfolioSection() {
         github: "https://github.com/saran-adhikari/courseworks-aiml",
         
       },
-      featured: true,
+      featured: false,
     },
     {
       id: 4,
@@ -120,6 +120,23 @@ export function PortfolioSection() {
         
       },
       featured: false,
+    },
+    {
+      id: 8,
+      title: "International Centre for Compliance and Development",
+      description: "Secure, scalable web app for ICCD delivering training and compliance resources.",
+      category: "Web App",
+      technologies: ["Next.js", "TypeScript", "Node.js"],
+      image: "/Images/iccd.png",
+      role: "Full-Stack Developer",
+      duration: "Currently Ongoing",
+      links: {
+        live: "https://iccd.vercel.app/",
+        // github: "#",
+        // case: "#",
+        
+      },
+      featured: true,
     },
   ]
 
