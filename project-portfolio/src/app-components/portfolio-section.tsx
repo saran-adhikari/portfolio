@@ -123,15 +123,15 @@ export function PortfolioSection() {
     },
     {
       id: 8,
-      title: "International Centre for Compliance and Development",
+      title: "International Centre for Capacity Development",
       description: "Secure, scalable web app for ICCD delivering training and compliance resources.",
       category: "Web App",
       technologies: ["Next.js", "TypeScript", "Node.js"],
       image: "/Images/iccd.png",
       role: "Full-Stack Developer",
-      duration: "Currently Ongoing",
+      duration: "12 weeks",
       links: {
-        live: "https://iccd.vercel.app/",
+        live: "https://iccdnepal.com/",
         // github: "#",
         // case: "#",
         
@@ -140,7 +140,7 @@ export function PortfolioSection() {
     },
   ]
 
-  const categories = ["All", "Web App", "Mobile", "AI/ML"]
+  const categories = ["All", "Web App", "AI/ML"]
 
   const filteredProjects =
     activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)
