@@ -13,6 +13,22 @@ export function PortfolioSection() {
   const projects = [
     {
       id: 1,
+      title: "Namuna Awasiya Bidhyalaya School Management System",
+      description: "A full-stack school management system with mobile application, admin dashboard and teachers and parents login system.",
+      category: "Web and Mobile App",
+      technologies: ["Python", "FastAPI", "PostgreSQL", "Flutter"],
+      image: "/Images/namuna.png",
+      role: "Full-Stack Developer",
+      duration: "3 months",
+      links: {
+        live: "",
+        github: "",
+        
+      },
+      featured: true,
+    },
+    {
+      id: 2,
       title: "PlayDeals: Games Price Insights",
       description: "A full-stack game price solution with modern UI, ML embedded forecasting, admin dashboard and event organizing system.",
       category: "Web App",
@@ -28,7 +44,7 @@ export function PortfolioSection() {
       featured: true,
     },
     {
-      id: 2,
+      id: 3,
       title: "Divine Guest House",
       description: "Web application with booking features and hospitality information.",
       category: "Web App",
@@ -43,7 +59,7 @@ export function PortfolioSection() {
       featured: false,
     },
     {
-      id: 3,
+      id: 4,
       title: "AI-ML Projects",
       description: "AI-ML project on image classification and sentiment analysis",
       category: "AI/ML",
@@ -58,16 +74,16 @@ export function PortfolioSection() {
       featured: false,
     },
     {
-      id: 4,
+      id: 5,
       title: "Nepal Travel Co",
       description: "Secure web application with treks information, booking features and intuitive user experience.",
       category: "Web App",
       technologies: ["Next.js", "TypeScript", "Node.js"],
       image: "/Images/ntc.png",
       role: "Full-Stack Developer",
-      duration: "Currently Ongoing",
+      duration: "7 months",
       links: {
-        live: "https://nepaltravelco.netlify.app/",
+        live: "https://nepaltravelco.vercel.app/",
         // github: "#",
         // case: "#",
         
@@ -75,7 +91,7 @@ export function PortfolioSection() {
       featured: true,
     },
     {
-      id: 5,
+      id: 6,
       title: "Human Resource Management System",
       description: "Interactive dashboard for Human Resource analytics with real-time data visualization and reporting.",
       category: "Web App",
@@ -90,7 +106,7 @@ export function PortfolioSection() {
       featured: false,
     },
     {
-      id: 6,
+      id: 7,
       title: "ModernFoot: E-Commerce Platform",
       description: "Modern e-commerce website design for displaying items with seamless user interactions.",
       category: "Web App",
@@ -107,7 +123,7 @@ export function PortfolioSection() {
       featured: false,
     },
     {
-      id: 7,
+      id: 8,
       title: "AI-ML Workshops",
       description: "Hands on AI-ML workshops",
       category: "AI/ML",
@@ -122,7 +138,7 @@ export function PortfolioSection() {
       featured: false,
     },
     {
-      id: 8,
+      id: 9,
       title: "International Centre for Capacity Development",
       description: "Secure, scalable web app for ICCD delivering training and compliance resources.",
       category: "Web App",
@@ -151,7 +167,7 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">Featured Work</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">Featured Works</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
             A selection of projects that showcase my skills in development, design, and problem-solving.
           </p>
