@@ -7,15 +7,55 @@ import { CalendarDays, MapPin, TrendingUp } from "lucide-react"
 export function ExperienceSection() {
   const experiences = [
     {
+      id: 1,
+      title: "Salesforce Developer and DevOps Engineer",
+      company: "Compliance Quest Pvt. Ltd.",
+      location: "Lalitpur, BA 44600",
+      period: "February 2026 - Present",
+      type: "On-site/Remote",
+      description: "Using salesforce tools and technologies to solve-real world problems and provide seamless user experience",
+      responsibilities: [
+        "Currently collaborating with the team to work on project pipelines and integrating salesforce development platforms on projects",
+        "Architecting and implementing core features by following scrum methodology to provide fast-paced industry standard projects",
+        "Prioritizing code quality, security best practices, and abiding by the company's policy to work on strengthening digital platforms.",
+      ],
+      technologies: ["Salesforce","Python","Microsoft Teams", "Git"],
+      achievements: [
+        "Successfully created a event management tracking system",
+      ],
+    },
+    {
+      id: 1,
+      title: "Freelance Full Stack Web and App Developer",
+      company: "End Codes | Web and Digital Solution",
+      location: "Bhaktapur, BA 44800",
+      period: "February 2026 - Present",
+      type: "Remote",
+      description: "Developed responsive web applications and collaborated with design teams.",
+      responsibilities: [
+        "Currently collaborating with fellow freelance contractors to provide a seamless digital solution to solve the evergrowing data handling and automation problems on school administration. The project involves building a fully responsive web application for school admins using FastAPI integrated with vanilla web dev tools, PostgreSQL and Flutter to create and expand the project for use of both teachers and parents",
+        "Architecting and implementing core features including creating teachers and parents accounts, sending notices, creating an online attendance system, handling the students data to match them with their respective classes and parents and much more to handle future phases",
+        "Ensuring performance optimization, mobile responsiveness, and accessibility across all major browsers and devices.",
+        "Collaborating with UI/UX designers and content teams to deliver a seamless and engaging platform.",
+        "Prioritizing code quality, security best practices, and API efficiency to support scalable deployment and future feature integration.",
+      ],
+      technologies: ["Figma","FastAPI" ,"Python", "Flutter","Vercel", "Git", "Trello"],
+      achievements: [
+        "Successfully tested backend endpoints",
+        "Moved on the second phase and started mobile application development",
+        "Successful testing of endpoints to handle huge number of users",
+      ],
+    },
+    {
       id: 2,
       title: "Freelance Full Stack Developer",
       company: "Nepal Travel Co.",
       location: "Kathmandu, BA 44600",
-      period: "July 2025 - Present",
+      period: "July 2025 - February 2026",
       type: "Remote",
       description: "Developed responsive web applications and collaborated with design teams.",
       responsibilities: [
-        "Currently leading the development of a comprehensive travel platform designed to promote tourism across Nepal. The project involves building a fully responsive, user-centric web application using Next.js, PostgreSQL, serverless API integration along with a content management system.",
+        "Led the development of a comprehensive travel platform designed to promote tourism across Nepal. The project involves building a fully responsive, user-centric web application using Next.js, PostgreSQL, serverless API integration along with a content management system.",
         "Architecting and implementing core features including destination listings, travel packages, dynamic booking forms, and user account management.",
         "Ensuring performance optimization, mobile responsiveness, and accessibility across all major browsers and devices.",
         "Collaborating with UI/UX designers and content teams to deliver a seamless and engaging user journey.",
@@ -29,7 +69,7 @@ export function ExperienceSection() {
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "Freelance Full Stack Developer",
       company: "The International Centre for Capacity Development (ICCD)",
       location: "Baluwatar, Kathmandu, BA 44600",
@@ -52,7 +92,7 @@ export function ExperienceSection() {
     
     
     {
-      id: 3,
+      id: 4,
       title: "Junior Web Developer",
       company: "Shreepech International",
       location: "Lalitpur, BA 44600",
